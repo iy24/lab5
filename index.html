@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image Gallery</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="main-container my-4 shadow rounded-4 overflow-hidden text-center">
+		<header class="bg-dark text-white py-4 mx-n4 mt-n4">
+			<h1 class="m-0 display-5 fw-bold">Image Gallery</h1>
+		</header>
+
+		<h3 class="mt-4 mb-3 fw-bold">Urban stuff</h3>
+		<section class="row g-3 px-3 px-md-4">
+			<div class="col-12 col-sm-6 col-md-5">
+				<figure class="d-flex flex-column m-0 h-100">
+					<img src="https://picsum.photos/id/134/1200/1200" alt="photo of a bridge from below" class="img-fluid rounded-3 gallery-thumbnail-img">
+					<figcaption class="text-center py-1">Rusty bridge supports</figcaption>
+				</figure>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4">
+				<figure class="d-flex flex-column m-0 h-100">
+					<img src="https://picsum.photos/id/898/900/1200" alt="photo of a city skyscaper" class="img-fluid rounded-3 gallery-thumbnail-img">
+					<figcaption class="text-center py-1">Some skyscraper</figcaption>
+				</figure>
+			</div>
+			<div class="col-12 col-sm-6 col-md-3">
+				<figure class="d-flex flex-column m-0 h-100">
+					<img src="https://picsum.photos/id/155/600/1200" alt="photo of a railroad going in the distance" class="img-fluid rounded-3 gallery-thumbnail-img">
+					<figcaption class="text-center py-1">Railroad</figcaption>
+				</figure>
+			</div>
+			<div class="col-12 col-sm-6 col-md-5">
+				<figure class="d-flex flex-column m-0 h-100">
+					<img src="https://picsum.photos/id/619/1200/1200" alt="photo of a red fire alarm box on a wall" class="img-fluid rounded-3 gallery-thumbnail-img">
+					<figcaption class="text-center py-1">Fire alarm system, apparently</figcaption>
+				</figure>
+			</div>
+			<div class="col-12 col-md-7">
+				<figure class="d-flex flex-column m-0 h-100">
+					<img src="https://picsum.photos/id/693/1500/1200" alt="photo of a red bridge above water" class="img-fluid rounded-3 gallery-thumbnail-img">
+					<figcaption class="text-center py-1">Red foggy bridge</figcaption>
+				</figure>
+			</div>
+			<div class="col-12 col-md-9">
+				<figure class="d-flex flex-column m-0 h-100">
+					<img src="https://picsum.photos/id/985/2100/1200" alt="photo of a distant city view past the water" class="img-fluid rounded-3 gallery-thumbnail-img">
+					<figcaption class="text-center py-1">Cityscape reflecting in the water</figcaption>
+				</figure>
+			</div>
+			<div class="col-12 col-sm-6 col-md-3">
+				<figure class="d-flex flex-column m-0 h-100">
+					<img src="https://picsum.photos/id/1033/600/1200" alt="photo of an escalator inside an airport" class="img-fluid rounded-3 gallery-thumbnail-img">
+					<figcaption class="text-center py-1">Airport I think</figcaption>
+				</figure>
+			</div>
+		</section>
+		<button class="btn btn-custom my-4 rounded-3" onclick="alert('nothing happened.')">Cool button</button>
+	</div>
+
+	<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-xl modal-dialog-centered">
+		<div class="modal-content bg-transparent border-0">
+		  <div class="modal-body p-0 d-flex justify-content-center align-items-center">
+			<img src="" alt="No image" id="modalImage" class="img-fluid rounded-3" style="max-width: 90vw; max-height: 90vh; cursor: pointer;">
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
